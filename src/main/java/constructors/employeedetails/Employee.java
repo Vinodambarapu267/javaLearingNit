@@ -20,15 +20,16 @@ public class Employee {
     }
 public  void calculateSalary(){
         if (noOfProjects>20){
+
             salary+=15000;
-            System.out.println(salary);
+            System.out.println("After update: "+salary);
         }else if (noOfProjects>10){
             salary+=10000;
-            System.out.println(salary);
+            System.out.println("after update: "+salary);
         }
         else {
             salary+=5000;
-            System.out.println(salary);
+            System.out.println("after update: "+salary);
         }
 }
 
@@ -74,12 +75,9 @@ public  void calculateSalary(){
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "firstName='" + firstName + '\'' +
-                ", lastName='" + lastName + '\'' +
-                ", employeeId=" + employeeId +
-                ", salary=" + salary +
-                ", noOfProjects=" + noOfProjects +
-                '}';
+        return "Employee Name: " + firstName + " "+lastName +
+                "\n EmployeeId: " + employeeId +
+                "\n Salary: " + salary +
+                "\n NoOfProjects: " + noOfProjects ;
     }
 }
