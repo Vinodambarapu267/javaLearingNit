@@ -23,4 +23,18 @@ public class Sourcing {
     public  double calculateGrossSalary(){
         return  basicSalary+HRaper+DAper+(((enrollmentReached/enrollmentTarget)*100)*perkEnrollment);
     }
+
+    @Override
+    public String toString() {
+        return "Sourcing{" +
+                "sourceId=" + sourceId +
+                ", sourceName='" + sourceName + '\'' +
+                ", basicSalary=" + basicSalary +
+                ", HRaper=" + HRaper +
+                ", DAper=" + DAper +
+                ", enrollmentTarget=" + enrollmentTarget +
+                ", enrollmentReached=" + enrollmentReached +
+                ", perkEnrollment=" + perkEnrollment +
+                '}';
+    }
 }

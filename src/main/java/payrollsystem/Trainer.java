@@ -21,4 +21,17 @@ public class Trainer {
     public  double calculateGrossSalary(){
         return basicSalary+HRAper+DAper+(batchCount*perkPerBatch);
     }
+
+    @Override
+    public String toString() {
+        return "Trainer{" +
+                "trainerInt=" + trainerInt +
+                ", trainerName='" + trainerName + '\'' +
+                ", basicSalary=" + basicSalary +
+                ", HRAper=" + HRAper +
+                ", DAper=" + DAper +
+                ", batchCount=" + batchCount +
+                ", perkPerBatch=" + perkPerBatch +
+                '}';
+    }
 }

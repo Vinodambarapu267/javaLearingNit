@@ -15,7 +15,17 @@ public class Employee {
         this.DAper = DAper;
     }
  public double calculateGrossSalary(){
-        double grossSalary = basicSalary+HRAper+DAper;
-        return  grossSalary;
+     return basicSalary+HRAper+DAper;
  }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "employeeId=" + employeeId +
+                ", empName='" + empName + '\'' +
+                ", basicSalary=" + basicSalary +
+                ", HRAper=" + HRAper +
+                ", DAper=" + DAper +
+                '}';
+    }
 }

@@ -20,5 +20,16 @@ public class Manager {
         return basicSalary+HRAper+DAper+projectAllowance;
     }
 
+    @Override
+    public String toString() {
+        return "Manager{" +
+                "managerId=" + managerId +
+                ", managerName='" + managerName + '\'' +
+                ", basicSalary=" + basicSalary +
+                ", HRAper=" + HRAper +
+                ", DAper=" + DAper +
+                ", projectAllowance=" + projectAllowance +
+                '}';
+    }
 }
 

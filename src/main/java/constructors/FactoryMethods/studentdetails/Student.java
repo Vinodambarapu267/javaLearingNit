@@ -8,11 +8,16 @@ public class Student {
     private String grade;
 
     private Student(String name, int age, String grade) {
+        if(age<0){
+            System.out.println("Error invalid input");
+            System.exit(0);
+        }
         this.name = name;
         this.age = age;
         this.grade = grade;
     }
     public  static Student createStudentObj(){
+
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter a Student Name: ");
         String name = sc.next();
