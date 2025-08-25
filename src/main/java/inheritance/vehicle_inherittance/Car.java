@@ -8,7 +8,7 @@ public class Car extends Vehicle{
         this.numberOfDoors = numberOFDoors;
     }
     public void displayDetails(){
-        System.out.println("Car Details:");
+        System.out.println("Engine Details:");
         System.out.println("Make : "+make);
         System.out.println("Model : "+model);
         System.out.println("Year : "+year);
