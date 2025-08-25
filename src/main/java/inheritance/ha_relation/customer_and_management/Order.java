@@ -30,8 +30,8 @@ public class Order {
     @Override
     public String toString() {
         return "Order{" +
-                "orderId='" + orderId + '\'' +
-                ", itemName='" + itemName + '\'' +
+                "orderId='" + orderId  +
+                ", itemName='" + itemName  +
                 ", price=" + price +
                 '}';
     }

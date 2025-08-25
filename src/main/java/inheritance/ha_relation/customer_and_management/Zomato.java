@@ -9,10 +9,12 @@ public class Zomato {
         String name= scanner.nextLine();
         System.out.println("Enter a customer mail: ");
         String mail= scanner.nextLine();
-
+        System.out.println("Enter the customer Address");
+        String add = scanner.nextLine();
         System.out.println("Enter a customer mobile Number: ");
         String mobileNo= scanner.nextLine();
-        Customer customer = new Customer(name,mail,mobileNo);
+
+        Customer customer = new Customer(name,mail,add,mobileNo);
         System.out.println(customer);
     }
 }

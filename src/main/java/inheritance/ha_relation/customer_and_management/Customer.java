@@ -6,9 +6,10 @@ public class Customer {
     private String customerName;
     private String customerEmail;
     private String customerMobileNo;
+    private  String address;
     private Order order;
 
-    public Customer(String customerName, String customerEmail, String customerMobileNo) {
+    public Customer(String customerName, String customerEmail, String address, String customerMobileNo) {
         Scanner sc= new Scanner(System.in);
         System.out.println("Enter the order Id:");
         String id= sc.nextLine();
@@ -18,6 +19,7 @@ public class Customer {
        double price  = sc.nextDouble();
         this.customerName = customerName;
         this.customerEmail = customerEmail;
+        this.address= address;
         this.customerMobileNo = customerMobileNo;
         this.order= new Order(id,item,price);
     }
@@ -28,6 +30,10 @@ public class Customer {
 
     public String getCustomerEmail() {
         return customerEmail;
+    }
+
+    public String getAddress() {
+        return address;
     }
 
     public String getCustomerMobileNo() {
@@ -43,7 +49,8 @@ public class Customer {
         return "Customer{" +
                 "customerName='" + customerName + '\'' +
                 ", customerEmail='" + customerEmail + '\'' +
-                ", customerMobileNo=" + customerMobileNo +
+                ", customerMobileNo='" + customerMobileNo + '\'' +
+                ", address='" + address + '\'' +
                 ", order=" + order +
                 '}';
     }
