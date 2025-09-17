@@ -9,11 +9,11 @@ public class Car implements Vehicle{
 
     @Override
     public void horn() {
-        System.out.println("car is having Horn : POP POP");
+        System.out.println("car is having Horn : Pop Pop");
     }
 
     @Override
     public void digitalMeter() {
-        System.out.println("Car is having Digital Meter");
+        System.out.println("Car is having Digital Meter....");
     }
 }
