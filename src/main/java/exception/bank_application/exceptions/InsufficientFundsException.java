@@ -1,0 +1,7 @@
+package exception.bank_application.exceptions;
+
+public class InsufficientFundsException extends Exception{
+    public InsufficientFundsException(String message) {
+        super(message);
+    }
+}
